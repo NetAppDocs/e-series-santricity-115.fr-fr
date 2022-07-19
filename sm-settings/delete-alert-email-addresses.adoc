@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/delete-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: delete, email, addresses, alerts 
+summary: Vous pouvez supprimer les adresses e-mail des destinataires qui reçoivent des alertes par e-mail. 
+---
+= Supprimez les adresses e-mail pour les alertes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer les adresses e-mail des destinataires qui reçoivent des alertes par e-mail.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *E-mail*.
+. Dans le tableau *Email Address*, sélectionnez l'adresse e-mail que vous souhaitez supprimer.
++
+Le bouton *Supprimer* dans le coin supérieur droit de la table devient disponible pour la sélection.
+
+. Cliquez sur *Supprimer*.
++
+La boîte de dialogue *confirmer la suppression de l'e-mail* s'ouvre.
+
+. Confirmez l'opération, puis cliquez sur *Supprimer*.
+
+
+Les alertes ne sont plus envoyées à cette adresse e-mail.

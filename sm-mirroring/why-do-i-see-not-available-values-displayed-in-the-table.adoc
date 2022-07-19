@@ -1,0 +1,14 @@
+---
+permalink: sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html 
+sidebar: sidebar 
+keywords: not available, values, displayed, table 
+summary: Le tableau répertorie les valeurs non disponibles lorsque les données situées sur la matrice de stockage distante ne sont pas disponibles pour être affichées. Pour afficher les données de la baie de stockage distante, lancez SANtricity System Manager à partir de SANtricity Unified Manager. 
+---
+= Pourquoi les valeurs non disponibles sont-elles affichées dans le tableau ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau répertorie les valeurs non disponibles lorsque les données situées sur la matrice de stockage distante ne sont pas disponibles pour être affichées. Pour afficher les données de la baie de stockage distante, lancez SANtricity System Manager à partir de SANtricity Unified Manager.

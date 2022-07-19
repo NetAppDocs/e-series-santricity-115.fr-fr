@@ -1,0 +1,67 @@
+---
+permalink: sm-settings/step-1-complete-a-csr.html 
+sidebar: sidebar 
+keywords: complete, ca certificate, signing, request, csr, controllers 
+summary: 'Pour recevoir un certificat d"autorité de certification (CA) pour les contrôleurs de la matrice de stockage, vous devez d"abord générer un fichier de requête de signature de certificat (CSR) pour chaque contrôleur de la matrice de stockage.' 
+---
+= Remplir une demande de signature de certificat CA (CSR) pour les contrôleurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour recevoir un certificat d'autorité de certification (CA) pour les contrôleurs de la matrice de stockage, vous devez d'abord générer un fichier de demande de signature de certificat (CSR) pour chaque contrôleur de la matrice de stockage.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+
+Cette tâche décrit comment générer les fichiers .CSR (demandes de signature de certificat) que vous envoyez à une autorité de certification pour recevoir des certificats de gestion signés pour les contrôleurs. Vous devez fournir des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du ou des contrôleurs. Au cours de cette tâche, un fichier .CSR est généré s'il n'y a qu'un seul contrôleur dans la matrice de stockage et deux fichiers .CSR s'il y a deux contrôleurs.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Array Management*, sélectionnez *Complete CSR*.
++
+[NOTE]
+====
+Si une boîte de dialogue vous invite à accepter un certificat auto-signé pour le second contrôleur, cliquez sur *accepter le certificat auto-signé* pour continuer.
+
+====
+. Entrez les informations suivantes, puis cliquez sur *Suivant* :
++
+** *Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp
+** *Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.
+** *Ville/localité* -- la ville où se trouve votre baie de stockage ou votre entreprise.
+** *État/région (facultatif)* -- l'état ou la région où se trouve votre baie de stockage ou votre entreprise.
+** *Code ISO de pays* -- le code ISO à deux chiffres de votre pays (Organisation internationale de normalisation), tel que les États-Unis.
+
+
++
+[CAUTION]
+====
+Certains champs peuvent être pré-remplis avec les informations appropriées, telles que l'adresse IP du contrôleur. Ne modifiez pas les valeurs préremplies sauf si vous êtes certain qu'elles sont incorrectes. Par exemple, si vous n'avez pas encore effectué de RSC, l'adresse IP du contrôleur est définie sur « localhost ». Dans ce cas, vous devez remplacer ""localhost" par le nom DNS ou l'adresse IP du contrôleur.
+
+====
+. Vérifiez ou entrez les informations suivantes sur le contrôleur A de votre matrice de stockage :
++
+** *Contrôleur Un nom commun* -- l'adresse IP ou le nom DNS du contrôleur A est affiché par défaut. Vérifiez que cette adresse est correcte. Elle doit correspondre exactement à ce que vous entrez pour accéder à System Manager dans le navigateur.
+** *Contrôleur Une autre adresse IP* -- si le nom commun est une adresse IP, vous pouvez éventuellement entrer des adresses IP ou des alias supplémentaires pour le contrôleur A. Pour plusieurs entrées, utilisez un format délimité par des virgules.
+** *Contrôleur Autre nom DNS* -- si le nom commun est un nom DNS, entrez tout nom DNS supplémentaire pour le contrôleur A. Pour plusieurs entrées, utilisez un format délimité par des virgules. S'il n'y a pas de noms DNS alternatifs, mais que vous avez saisi un nom DNS dans le premier champ, copiez ce nom ici. Si la matrice de stockage ne comporte qu'un seul contrôleur, le bouton *Finish* est disponible. Si la matrice de stockage comporte deux contrôleurs, le bouton *Suivant* est disponible.
+
+
++
+[NOTE]
+====
+Ne cliquez pas sur le lien *Ignorer cette étape* lorsque vous créez une demande CSR. Ce lien est fourni dans les situations de récupération d'erreurs. Dans de rares cas, une requête CSR peut échouer sur un contrôleur, mais pas sur l'autre. Ce lien vous permet d'ignorer l'étape de création d'une requête CSR sur le contrôleur A s'il est déjà défini et de passer à l'étape suivante pour recréer une requête CSR sur le contrôleur B.
+
+====
+. S'il n'y a qu'un seul contrôleur, cliquez sur *Finish*. S'il y a deux contrôleurs, cliquez sur *Suivant* pour entrer les informations relatives au contrôleur B (comme ci-dessus), puis cliquez sur *Terminer*.
++
+Pour un seul contrôleur, un fichier .CSR est téléchargé sur votre système local. Pour les contrôleurs doubles, deux fichiers .CSR sont téléchargés. L'emplacement du dossier de téléchargement dépend de votre navigateur.
+
+. Envoyez le(s) fichier(s) .CSR à votre autorité de certification.
+
+
+Lorsque vous recevez les certificats numériques, importez les fichiers de certificat que l'AC vous a envoyés.

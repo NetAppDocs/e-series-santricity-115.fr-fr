@@ -1,0 +1,81 @@
+---
+permalink: sm-settings/certificate-terminology.html 
+sidebar: sidebar 
+keywords: certificate, terminology 
+summary: 'Découvrez comment les termes du certificat s"appliquent à votre baie de stockage.' 
+---
+= Terminologie du certificat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les termes du certificat s'appliquent à votre baie de stockage.
+
+|===
+| Durée | Description 
+
+
+ a| 
+ENV
+ a| 
+Une autorité de certification (AC) est une entité de confiance qui délivre des documents électroniques, appelés certificats numériques, pour la sécurité Internet. Ces certificats identifient les propriétaires de sites Web, ce qui permet des connexions sécurisées entre les clients et les serveurs.
+
+
+
+ a| 
+CSR
+ a| 
+Une requête de signature de certificat (CSR) est un message envoyé par un déposant à une autorité de certification (AC). La RSC valide les informations dont l'AC a besoin pour émettre un certificat.
+
+
+
+ a| 
+Certificat
+ a| 
+Un certificat identifie le propriétaire d'un site à des fins de sécurité, ce qui empêche les pirates d'emprunter l'identité du site. Le certificat contient des informations sur le propriétaire du site et l'identité de l'entité de confiance qui certifie (signe) ces informations.
+
+
+
+ a| 
+Certificat client
+ a| 
+Pour la gestion des clés de sécurité, un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut ainsi faire confiance à leurs adresses IP.
+
+
+
+ a| 
+Certificat de serveur de gestion des clés
+ a| 
+Pour la gestion des clés de sécurité, un certificat de serveur de gestion des clés valide le serveur, afin que la baie de stockage puisse faire confiance à son adresse IP.
+
+
+
+ a| 
+Certificat de gestion
+ a| 
+Un certificat de gestion est approuvé par une autorité de certification (CA) et permet un accès sécurisé à l'application Web. Également appelé « certificat signé ».
+
+
+
+ a| 
+Serveur OCSP
+ a| 
+Le serveur OCSP (Online Certificate Status Protocol) détermine si l'autorité de certification a révoqué des certificats avant leur date d'expiration prévue, puis empêche l'utilisateur d'accéder à un serveur si le certificat est révoqué.
+
+
+
+ a| 
+Certificat auto-signé
+ a| 
+Un certificat auto-signé est préchargé sur le contrôleur. Si la connexion au site est auto-signée, un message d'avertissement s'affiche avant de pouvoir accéder à l'application Web.
+
+
+
+ a| 
+Certificat approuvé
+ a| 
+Un certificat approuvé d'une autorité de certification (CA) est un certificat connu en haut de la hiérarchie de certificats. Également appelé « certificat racine ».
+
+|===

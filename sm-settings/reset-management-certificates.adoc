@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/reset-management-certificates.html 
+sidebar: sidebar 
+keywords: reset, management, certificates 
+summary: 'Vous pouvez rétablir les certificats de gestion de la matrice de stockage à l"état auto-signé en usine.' 
+---
+= Réinitialisez les certificats de gestion
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez rétablir les certificats de gestion de la matrice de stockage à l'état auto-signé en usine.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Les certificats doivent être importés au préalable.
+
+
+La réinitialisation des certificats de gestion sur la matrice de stockage supprime les certificats de gestion actuels de chacun des contrôleurs. Une fois les certificats réinitialisés, les contrôleurs retournent à l'utilisation de certificats auto-signés.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Array Management*, sélectionnez *Réinitialiser*.
++
+Une boîte de dialogue *confirmer la réinitialisation des certificats de gestion* s'ouvre.
+
+. Type `reset` Dans le champ, puis cliquez sur *Réinitialiser*.
+
+
+Une fois votre navigateur actualisé, les contrôleurs reviennent à utiliser des certificats auto-signés. Par conséquent, le système invite les utilisateurs à accepter manuellement le certificat auto-signé pour leurs sessions.

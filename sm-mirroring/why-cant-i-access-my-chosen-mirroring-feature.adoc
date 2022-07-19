@@ -1,0 +1,24 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: access, mirror, feature 
+summary: 'Pour utiliser la fonctionnalité de mise en miroir asynchrone ou de mise en miroir synchrone, SANtricity Unified Manager doit être exécuté sur votre hôte local via une connexion HTTPS afin de découvrir les baies de stockage compatibles avec la mise en miroir et de lancer l"opération de mise en miroir. Dans Unified Manager, vous devez sélectionner la baie de stockage depuis laquelle vous souhaitez copier les données, puis cliquer sur lancer pour ouvrir SANtricity System Manager.' 
+---
+= Pourquoi ne puis-je pas accéder à la fonction de mise en miroir choisie ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour utiliser la fonctionnalité de mise en miroir asynchrone ou de mise en miroir synchrone, SANtricity Unified Manager doit être exécuté sur votre hôte local via une connexion HTTPS afin de découvrir les baies de stockage compatibles avec la mise en miroir et de lancer l'opération de mise en miroir. Dans Unified Manager, vous devez sélectionner la baie de stockage depuis laquelle vous souhaitez copier les données, puis cliquer sur lancer pour ouvrir SANtricity System Manager.
+
+Pour utiliser la fonction de symétrie, vérifiez les points suivants :
+
+* Le service Web Services Proxy est en cours d'exécution.
+* SANtricity Unified Manager s'exécute sur votre hôte local via une connexion HTTPS.
+* SANtricity Unified Manager affiche des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+* SANtricity System Manager est lancé à partir d'Unified Manager.
+* Vous devez avoir découvert les deux baies de stockage entre elles que vous souhaitez mettre en miroir des données. Ensuite, dans Unified Manager, vous sélectionnez la baie de stockage du volume primaire, puis cliquez sur *Launch* pour ouvrir SANtricity System Manager basé sur navigateur.
+

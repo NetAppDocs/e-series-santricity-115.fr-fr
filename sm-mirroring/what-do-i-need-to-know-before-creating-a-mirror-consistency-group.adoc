@@ -1,0 +1,23 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: creating,  mirror, consistency group 
+summary: Sur votre navigateur, vous devez installer SANtricity Unified Manager. Vous avez découvert les deux baies de stockage que vous souhaitez mettre en miroir des données entre elles. Ensuite, dans Unified Manager, vous sélectionnez la baie de stockage du volume primaire et cliquez sur lancer pour ouvrir SANtricity System Manager basé sur navigateur. 
+---
+= Que dois-je savoir avant de créer un groupe de cohérence miroir ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sur votre navigateur, vous devez installer SANtricity Unified Manager. Vous avez découvert les deux baies de stockage que vous souhaitez mettre en miroir des données entre elles. Ensuite, dans Unified Manager, vous sélectionnez la baie de stockage du volume primaire, puis cliquez sur lancer pour ouvrir SANtricity System Manager basé sur navigateur.
+
+De plus, assurez-vous des éléments suivants :
+
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vos baies de stockage locales et distantes doivent être connectées via une structure Fibre Channel ou une interface iSCSI.
+

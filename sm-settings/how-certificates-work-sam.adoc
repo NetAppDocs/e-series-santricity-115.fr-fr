@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/how-certificates-work-sam.html 
+sidebar: sidebar 
+keywords: ca certificates, csr files 
+summary: 'Une autorité de certification (AC) est une entité de confiance qui délivre des documents électroniques, appelés certificats numériques, pour la sécurité Internet. Ces certificats identifient les propriétaires de sites Web, ce qui permet des connexions sécurisées entre les clients et les serveurs.' 
+---
+= Fonctionnement des certificats CA
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une autorité de certification (AC) est une entité de confiance qui délivre des documents électroniques, appelés certificats numériques, pour la sécurité Internet. Ces certificats identifient les propriétaires de sites Web, ce qui permet des connexions sécurisées entre les clients et les serveurs.
+
+Lorsque vous ouvrez un navigateur et que vous essayez de vous connecter à System Manager via le port de gestion du contrôleur, le navigateur tente de vérifier que le contrôleur de la matrice de stockage est une source fiable. Si le navigateur ne parvient pas à localiser un certificat numérique pour le contrôleur, il vous avertit que le certificat n'est pas signé par une autorité reconnue et vous demande si vous souhaitez continuer. Si vous ne souhaitez plus voir cette alerte, vous devez obtenir un certificat numérique signé d'une autorité de certification.
+
+Si vous utilisez un serveur de gestion externe des clés avec la fonction sécurité des lecteurs, vous pouvez également créer des certificats d'authentification entre ce serveur et les contrôleurs ou accepter les certificats auto-signés à partir de la matrice de stockage.
+
+Les étapes suivantes sont requises pour l'utilisation d'un certificat numérique d'une autorité de confiance :
+
+. Accédez au menu:Paramètres[certificats]. Votre connexion utilisateur doit inclure des autorisations d'administrateur de sécurité ; sinon, *certificats* ne s'affiche pas sur la page.
+. Créez une requête de signature de certificat (RSC) pour chaque contrôleur ou pour un serveur de gestion de clés.
+. Envoyez le(s) fichier(s) .CSR à une autorité de certification, puis attendez qu'ils vous envoient les certificats.
+. Importez le certificat de confiance (intermédiaire et racine) à partir de l'autorité de certification. Ces certificats établissent un point de confiance pour une hiérarchie de CA.
+. Importez les certificats de gestion signés pour chaque contrôleur ou le serveur de gestion des clés.
+

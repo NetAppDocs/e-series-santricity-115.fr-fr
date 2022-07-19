@@ -1,0 +1,24 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: asynchronous, mirror, create, mirrored pair 
+summary: Votre matrice de stockage doit contenir au moins un groupe de cohérence miroir. 
+---
+= Mise en miroir asynchrone : que faut-il savoir avant de créer une paire en miroir ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Votre matrice de stockage doit contenir au moins un groupe de cohérence miroir.
+
+De plus, assurez-vous des éléments suivants :
+
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vos baies de stockage locales et distantes doivent être connectées via une structure Fibre Channel ou une interface iSCSI.
+* Sur votre navigateur, vous devez installer SANtricity Unified Manager. Vous avez découvert les deux baies de stockage que vous souhaitez mettre en miroir des données entre elles. Ensuite, dans Unified Manager, vous sélectionnez la baie de stockage du volume primaire, puis cliquez sur lancer pour ouvrir SANtricity System Manager basé sur navigateur.
+

@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html 
+sidebar: sidebar 
+keywords: how, what, know, certificates, need, uploaded, system manager 
+summary: 'Pour la gestion externe des clés, vous importez deux types de certificats pour l"authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.' 
+---
+= Comment puis-je savoir quels certificats doivent être téléchargés dans System Manager ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour la gestion externe des clés, vous importez deux types de certificats pour l'authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.
+
+Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs adresses IP. Pour obtenir un certificat client, vous devez remplir une RSC pour la matrice de stockage, puis la télécharger sur le serveur de gestion des clés. Depuis le serveur, générez un certificat client, puis utilisez System Manager pour l'importer.
+
+Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Pour obtenir un certificat de serveur de gestion des clés, vous devez le générer à partir du serveur de gestion des clés.

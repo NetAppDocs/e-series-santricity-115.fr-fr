@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-data-assurance.html 
+sidebar: sidebar 
+keywords: data, assurance 
+summary: 'Data assurance (DA) vérifie et corrige les erreurs susceptibles de se produire lors de la communication de données entre un hôte et une baie de stockage. Les fonctionnalités DE DA sont présentées au niveau du pool et du groupe de volumes dans System Manager.' 
+---
+= Qu'est-ce que Data assurance ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data assurance (DA) vérifie et corrige les erreurs susceptibles de se produire lors de la communication de données entre un hôte et une baie de stockage. Les fonctionnalités DE DA sont présentées au niveau du pool et du groupe de volumes dans System Manager.
+
+La fonctionnalité Data assurance (DA) renforce l'intégrité des données sur l'ensemble du système de stockage. DA permet à la matrice de stockage de vérifier si des erreurs peuvent se produire lorsque des données sont déplacées entre les hôtes et les lecteurs. Lorsque cette fonctionnalité est activée, la matrice de stockage ajoute des codes de vérification des erreurs (également appelés vérifications cycliques de redondance ou CRCS) à chaque bloc de données du volume. Après le déplacement d'un bloc de données, la matrice de stockage utilise ces codes CRC pour déterminer si des erreurs se sont produites au cours de la transmission. Les données potentiellement corrompues ne sont ni écrites sur le disque ni renvoyées à l'hôte.
+
+Si vous souhaitez utiliser la fonction DA, sélectionnez un pool ou un groupe de volumes qui est compatible DA lorsque vous créez un nouveau volume (recherchez *Oui* en regard de DA dans la table des candidats de groupe de volumes et de pools).
+
+Assurez-vous d'affecter ces volumes DA à un hôte à l'aide d'une interface d'E/S capable de gérer DA. Les interfaces d'E/S qui peuvent être DA incluent Fibre Channel, SAS, iSCSI over TCP/IP et iser over InfiniBand (iSCSI Extensions for RDMA/IB). DA n'est pas pris en charge par SRP sur InfiniBand.

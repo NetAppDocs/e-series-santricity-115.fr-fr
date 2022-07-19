@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/view-imported-certificates.html 
+sidebar: sidebar 
+keywords: view, imported, certificate, information 
+summary: 'À partir de la page certificats, vous pouvez afficher le type de certificat, l"autorité d"émission et la plage de dates valide des certificats que vous avez précédemment importés.' 
+---
+= Afficher les informations de certificat importé
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page certificats, vous pouvez afficher le type de certificat, l'autorité d'émission et la plage de dates valide des certificats que vous avez précédemment importés.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+
+Cette tâche explique comment afficher les informations relatives aux certificats installés par l'utilisateur ou préinstallés.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Sélectionnez l'un des onglets pour afficher des informations sur les certificats de gestion des contrôleurs, les certificats de confiance et les certificats d'un serveur de gestion des clés.
++
+[cols="25h,~"]
+|===
+| Onglet | Description 
+
+
+ a| 
+Gestion de la baie
+ a| 
+Afficher des informations sur tous les certificats de serveur importés pour les contrôleurs.
+
+
+
+ a| 
+Fiabilité
+ a| 
+Afficher des informations sur tous les certificats (racine) de confiance importés pour les contrôleurs. Utilisez le champ filtre sous *Afficher les certificats qui sont...* pour afficher les certificats installés par l'utilisateur ou pré-installés.
+
+** *Installé par l'utilisateur*. Certificats qu'un utilisateur a téléchargés sur la matrice de stockage (y compris les certificats de confiance, les certificats LDAPS et les certificats de fédération d'identité).
+** *Préinstallé*. Certificats inclus avec la matrice de stockage.
+
+
+
+
+ a| 
+Gestion des clés
+ a| 
+Afficher des informations sur tous les certificats de gestion (signés) importés pour un serveur de gestion de clés externe.
+
+|===
+

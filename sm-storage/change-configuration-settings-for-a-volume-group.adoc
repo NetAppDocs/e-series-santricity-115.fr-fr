@@ -1,0 +1,86 @@
+---
+permalink: sm-storage/change-configuration-settings-for-a-volume-group.html 
+sidebar: sidebar 
+keywords: change, raid level, volume group 
+summary: 'Vous pouvez modifier le niveau RAID d"un groupe de volumes pour répondre aux besoins de performances des applications qui accèdent au groupe de volumes. Cette opération modifie le niveau RAID d"un groupe de volumes sans affecter les E/S de données' 
+---
+= Modifiez le niveau RAID d'un groupe de volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le niveau RAID d'un groupe de volumes pour répondre aux besoins de performances des applications qui accèdent au groupe de volumes. Cette opération modifie le niveau RAID d'un groupe de volumes sans affecter les E/S de données
+
+.Avant de commencer
+* Le groupe de volumes doit avoir le statut optimal.
+* Vous devez disposer de suffisamment de capacité au sein du groupe de volumes pour passer au nouveau niveau RAID.
+* Vous ne pouvez pas modifier le niveau RAID d'un pool. System Manager configure automatiquement des pools en tant que RAID 6.
+
+
+Vous ne pouvez pas annuler cette opération après son démarrage. Vos données restent disponibles au cours de cette opération.
+
+En savoir plus sur les niveaux de RAID
+
+[cols="2*"]
+|===
+| Niveau RAID | Description 
+
+
+ a| 
+Répartition RAID 0
+ a| 
+Offre de hautes performances, mais ne fournit aucune redondance de données. Si un seul disque tombe en panne dans le groupe de volumes, tous les volumes associés sont défaillants et toutes les données sont perdues.
+
+Un groupe RAID de répartition regroupe deux ou plusieurs lecteurs en un disque logique de grande taille.
+
+
+
+ a| 
+Mise en miroir RAID 1
+ a| 
+Offre de hautes performances et une disponibilité des données optimale, et convient au stockage de données sensibles à un niveau professionnel ou personnel.
+
+Protège vos données en mettant automatiquement en miroir le contenu d'un disque sur le second disque de la paire en miroir. Elle protège les données en cas de panne d'un seul disque.
+
+
+
+ a| 
+Répartition/mise en miroir RAID 10
+ a| 
+Fournit une combinaison de RAID 0 (répartition) et de RAID 1 (mise en miroir), et est obtenue lorsque quatre disques ou plus sont sélectionnés.
+
+RAID 10 convient aux applications transactionnelles à volume élevé, telles qu'une base de données, qui exigent de hautes performances et une tolérance aux pannes élevée.
+
+
+
+ a| 
+RAID 5
+ a| 
+Elle est particulièrement adaptée aux environnements multi-utilisateurs (comme le stockage des bases de données ou des systèmes de fichiers) dans lesquels la taille d'E/S classique est faible et où la proportion d'opérations de lecture est élevée.
+
+
+
+ a| 
+RAID 6
+ a| 
+Idéal pour les environnements nécessitant une protection de redondance au-delà du RAID 5, mais sans exiger de hautes performances en écriture.
+
+|===
+RAID 3 ne peut être affecté qu'aux groupes de volumes à l'aide de l'interface de ligne de commande.
+
+.Étapes
+. Sélectionnez *menu:Storage[pools & Volume Groups]*.
+. Sélectionnez le groupe de volumes que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Réglages de groupes de volumes s'affiche.
+
+. Sélectionnez le niveau RAID dans la liste déroulante, puis cliquez sur *Enregistrer*.
++
+Une boîte de dialogue de confirmation s'affiche si la capacité est réduite, si la redondance des volumes est perdue ou si la protection contre la perte de tiroir/tiroir est perdue suite à un changement de niveau RAID. Sélectionnez *Oui* pour continuer, sinon cliquez sur *non*.
+
+
+
+Lorsque vous modifiez le niveau RAID d'un groupe de volumes, System Manager modifie les niveaux RAID de chaque volume qui comprend ce groupe. Les performances peuvent être légèrement affectées pendant l'opération.

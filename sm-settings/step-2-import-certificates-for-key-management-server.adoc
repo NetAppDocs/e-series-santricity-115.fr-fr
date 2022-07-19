@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/step-2-import-certificates-for-key-management-server.html 
+sidebar: sidebar 
+keywords: import, key, management, server, certificates 
+summary: 'Pour la gestion externe des clés, vous importez des certificats d"authentification entre la matrice de stockage et le serveur de gestion des clés de sorte que les deux entités puissent se faire confiance. Il existe deux types de certificats : le certificat client valide les contrôleurs, tandis que le certificat du serveur de gestion des clés valide le serveur.' 
+---
+= Importer les certificats du serveur de gestion des clés
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour la gestion externe des clés, vous importez des certificats d'authentification entre la matrice de stockage et le serveur de gestion des clés de sorte que les deux entités puissent se faire confiance. Il existe deux types de certificats : le certificat client valide les contrôleurs, tandis que le certificat du serveur de gestion des clés valide le serveur.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Un certificat client est disponible pour la matrice de stockage.
++
+[NOTE]
+====
+Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs adresses IP. Pour obtenir un certificat client, vous devez remplir une RSC pour la matrice de stockage, puis la télécharger sur le serveur de gestion des clés. À partir du serveur, générez un certificat client.
+
+====
+* Le certificat du serveur de gestion des clés est disponible.
++
+[NOTE]
+====
+Un certificat de serveur de gestion des clés valide le serveur, afin que la baie de stockage puisse approuver son adresse IP. Pour obtenir un certificat de serveur de gestion des clés, vous devez le générer à partir du serveur de gestion des clés.
+
+====
+
+
+Cette tâche décrit comment télécharger des fichiers de certificat pour l'authentification entre les contrôleurs de la matrice de stockage et le serveur de gestion des clés.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Key Management*, sélectionnez *Import*.
++
+Une boîte de dialogue s'ouvre pour importer les fichiers de certificat.
+
+. Cliquez sur les boutons *Parcourir* pour sélectionner les fichiers.
++
+Les noms de fichiers s'affichent dans la boîte de dialogue.
+
+. Cliquez sur *Importer*.
++
+Le(s) fichier(s) est chargé(s) et validé(s).
+
+

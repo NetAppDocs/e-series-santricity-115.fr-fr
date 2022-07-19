@@ -1,0 +1,31 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-activation.html 
+sidebar: sidebar 
+keywords: synchronous, mirror, activation 
+summary: La fonction de mise en miroir synchrone est automatiquement activée lorsque la première paire mise en miroir synchrone est créée sur une baie de stockage. 
+---
+= Activation de la mise en miroir synchrone
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction de mise en miroir synchrone est automatiquement activée lorsque la première paire mise en miroir synchrone est créée sur une baie de stockage.
+
+Lorsque la fonction de mise en miroir synchrone est activée, System Manager effectue les opérations suivantes :
+
+* Réserve le port le plus numéroté du contrôleur HIC pour la transmission des données en miroir.
++
+Les demandes d'E/S reçues sur ce port ne sont acceptées que par le propriétaire du contrôleur préféré distant du volume secondaire de la paire en miroir. (Les réservations sur le volume primaire sont autorisées.)
+
+* Crée deux volumes de capacité réservée, un pour chaque contrôleur, qui sont utilisés pour la journalisation des informations d'écriture afin de restaurer les données à partir de la réinitialisation du contrôleur et d'autres interruptions temporaires.
++
+La capacité de chaque volume est de 128 Mio. Cependant, si les volumes sont placés dans un pool, 4 Gio sont réservées pour chaque volume.
+
+
+
+La fonctionnalité de mise en miroir synchrone permet de limiter le nombre de volumes pris en charge sur une baie de stockage donnée. Avant d'activer la mise en miroir synchrone, assurez-vous que le nombre de volumes configurés sur votre baie de stockage est inférieur à la limite prise en charge. Lorsque la mise en miroir synchrone est active, les deux volumes de capacité réservée qui sont créés sont pris en compte par rapport à la limite du volume.
+
+Si vous devez désactiver la mise en miroir synchrone ultérieurement, accédez au menu :stockage[mise en miroir synchrone > tâches peu courantes > Désactiver].

@@ -1,0 +1,46 @@
+---
+permalink: sm-hardware/configure-iser-over-infiniband-ports-hardware.html 
+sidebar: sidebar 
+keywords: configure, iser, infiniband, ports 
+summary: 'Si votre contrôleur inclut un port iser sur InfiniBand, vous pouvez configurer la connexion réseau à l"hôte. Les paramètres de configuration sont disponibles à partir de la page matériel ou système.' 
+---
+= Configurez iser sur les ports InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si votre contrôleur inclut un port iser sur InfiniBand, vous pouvez configurer la connexion réseau à l'hôte. Les paramètres de configuration sont disponibles à partir de la page matériel ou système.
+
+.Avant de commencer
+* Votre contrôleur doit inclure un iser sur le port InfiniBand ; sinon, les paramètres iser over InfiniBand ne sont pas disponibles dans System Manager.
+* Vous devez connaître l'adresse IP de la connexion hôte.
+
+
+Vous pouvez accéder à la configuration iser sur InfiniBand à partir de la page *Hardware* ou du menu:Settings[System]. Cette tâche décrit comment configurer les ports à partir de la page *Hardware*.
+
+[NOTE]
+====
+Les paramètres et fonctions iser over InfiniBand apparaissent uniquement si le contrôleur de votre baie de stockage comprend un port iser over InfiniBand.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur avec le port iser sur InfiniBand que vous souhaitez configurer.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *configurer iser sur les ports InfiniBand*.
++
+La boîte de dialogue *Configure iser over InfiniBand ports* s'ouvre.
+
+. Dans la liste déroulante, sélectionnez le port HIC que vous souhaitez configurer, puis entrez l'adresse IP de l'hôte.
+. Cliquez sur *configurer*.
+. Terminez la configuration, puis réinitialisez l'iser sur le port InfiniBand en cliquant sur *Oui*.
+

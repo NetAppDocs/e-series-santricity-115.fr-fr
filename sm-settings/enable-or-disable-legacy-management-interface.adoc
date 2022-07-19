@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/enable-or-disable-legacy-management-interface.html 
+sidebar: sidebar 
+keywords: enable, disable, legacy, management, interface 
+summary: 'Vous pouvez activer ou désactiver l"interface de gestion héritée (symbole), qui est une méthode de communication entre la matrice de stockage et le client de gestion. Par défaut, l"interface de gestion héritée est activée. Si vous la désactivez, la baie de stockage et le client de gestion utiliseront une méthode de communication plus sécurisée (API REST via https). Cependant, certains outils et tâches peuvent être affectés si ils sont désactivés.' 
+---
+= Activez ou désactivez l'interface de gestion héritée
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer ou désactiver l'interface de gestion héritée (symbole), qui est une méthode de communication entre la matrice de stockage et le client de gestion. Par défaut, l'interface de gestion héritée est activée. Si vous la désactivez, la baie de stockage et le client de gestion utiliseront une méthode de communication plus sécurisée (API REST via https). Cependant, certains outils et tâches peuvent être affectés si ils sont désactivés.
+
+Le paramètre affecte les opérations comme suit :
+
+* *On* (par défaut) -- paramètre requis pour la mise en miroir, pour les commandes CLI qui fonctionnent uniquement sur les baies de stockage E5700 et E5600, et d'autres outils comme l'utilitaire QuickConnect et l'adaptateur OCI.
+* *Off* -- paramètre requis pour renforcer la confidentialité des communications entre la baie de stockage et le client de gestion, et pour accéder aux outils externes. Paramètre recommandé lors de la configuration d'un serveur d'annuaire (LDAP).
+
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler l'écran jusqu'à *Paramètres supplémentaires*, puis cliquez sur *interface de gestion des modifications*.
+. Dans la boîte de dialogue, cliquez sur *Oui* pour continuer.
+

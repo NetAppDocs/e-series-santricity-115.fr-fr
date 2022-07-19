@@ -1,0 +1,14 @@
+---
+permalink: sm-mirroring/mirror-volumes-asynchronously.html 
+sidebar: sidebar 
+keywords: mirror, volumes, asynchronously 
+summary: 'Grâce à la fonctionnalité de mise en miroir asynchrone, un volume peut disposer de deux copies physiques, ce qui facilite la disponibilité des données et réduit les interruptions. Chaque relation de mise en miroir asynchrone implique un volume dans un rôle principal et un volume (sur une baie de stockage différente) dans un rôle secondaire.' 
+---
+= Mettre en miroir les volumes de manière asynchrone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grâce à la fonctionnalité de mise en miroir asynchrone, un volume peut disposer de deux copies physiques, ce qui facilite la disponibilité des données et réduit les interruptions. Chaque relation de mise en miroir asynchrone implique un volume dans un rôle principal et un volume (sur une baie de stockage différente) dans un rôle secondaire.

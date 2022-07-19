@@ -1,0 +1,42 @@
+---
+permalink: sm-settings/step-3-import-signed-certificates-for-the-controllers.html 
+sidebar: sidebar 
+keywords: import, management, certificate, controllers 
+summary: 'Après avoir importé la chaîne de certificats approuvée, vous importez un fichier de certificat de gestion (signé) pour chaque contrôleur de la matrice de stockage.' 
+---
+= Importer un certificat de gestion pour les contrôleurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir importé la chaîne de certificats approuvée, vous importez un fichier de certificat de gestion (signé) pour chaque contrôleur de la matrice de stockage.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Les certificats approuvés ont été importés.
+* L'autorité de certification a renvoyé un fichier de certificat de gestion pour chaque contrôleur.
+* Les fichiers de certificat de gestion sont disponibles sur votre système local.
+
+
+Cette tâche décrit comment télécharger les fichiers de certificat de gestion pour l'authentification du contrôleur.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Array Management*, sélectionnez *Importer*.
++
+Une boîte de dialogue s'ouvre pour importer le(s) fichier(s) de certificat.
+
+. Cliquez sur *Parcourir* pour sélectionner le fichier du contrôleur A. S'il y a deux contrôleurs, cliquez sur le deuxième bouton *Parcourir* pour sélectionner le fichier du contrôleur B.
++
+Les noms de fichiers s'affichent dans la boîte de dialogue.
+
+. Cliquez sur *Importer*.
++
+Le(s) fichier(s) est chargé(s) et validé(s).
+
+
+
+La session est automatiquement interrompue. Vous devez vous reconnecter pour que le ou les certificats prennent effet. Lorsque vous vous connectez de nouveau, le nouveau certificat signé par l'autorité de certification est utilisé pour votre session.

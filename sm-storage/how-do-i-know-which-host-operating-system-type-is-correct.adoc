@@ -1,0 +1,131 @@
+---
+permalink: sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html 
+sidebar: sidebar 
+keywords: host, operate, system type, correct 
+summary: 'Le champ Type de système d"exploitation hôte contient le système d"exploitation de l"hôte. Vous pouvez sélectionner le type d"hôte recommandé dans la liste déroulante ou autoriser l"agent de contexte hôte (HCA) à configurer l"hôte et le type de système d"exploitation hôte approprié.' 
+---
+= Comment savoir quel type de système d'exploitation hôte est correct ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le champ Type de système d'exploitation hôte contient le système d'exploitation de l'hôte. Vous pouvez sélectionner le type d'hôte recommandé dans la liste déroulante ou autoriser l'agent de contexte hôte (HCA) à configurer l'hôte et le type de système d'exploitation hôte approprié.
+
+[cols="2*"]
+|===
+| Type de système d'exploitation hôte | Système d'exploitation et pilote multivoie 
+
+
+ a| 
+AIX MPIO
+ a| 
+Le système d'exploitation Advanced Interactive Executive (AIX) et le pilote MPIO natif
+
+
+
+ a| 
+AVT_4M
+ a| 
+Pilote de chemins d'accès multiples propriétaire Silicon Graphics, Inc. (SGI) ; consultez la documentation d'installation de SGI pour plus d'informations
+
+
+
+ a| 
+Valeur par défaut
+ a| 
+Cette fonction est réservée au démarrage initial de la baie de stockage. Elle doit être modifiée pour correspondre au système d'exploitation hôte et au pilote multivoie utilisés pour l'hôte spécifique
+
+
+
+ a| 
+HP-UX
+ a| 
+Le système d'exploitation HP-UX avec pilote multivoie natif
+
+
+
+ a| 
+Linux (ATTO)
+ a| 
+Le système d'exploitation Linux et le pilote ATTO Technology, Inc. (Doivent utiliser des HBA FC ATTO)
+
+
+
+ a| 
+Linux (DM-MP)
+ a| 
+Le système d'exploitation Linux et le pilote DM-MP natif
+
+
+
+ a| 
+Linux (PathManager)
+ a| 
+Le système d'exploitation Linux et le pilote de chemins d'accès multiples propriétaire SGI ; consultez la documentation d'installation de SGI pour plus d'informations
+
+
+
+ a| 
+Mac OS
+ a| 
+Le pilote Mac OS et ATTO Technology, Inc
+
+
+
+ a| 
+ONTAP
+ a| 
+FlexArray
+
+
+
+ a| 
+Solaris (version 11 ou ultérieure)
+ a| 
+Le système d'exploitation Solaris 11 ou version ultérieure et le pilote MPxIO natif
+
+
+
+ a| 
+Solaris (version 10 ou antérieure)
+ a| 
+Le système d'exploitation Solaris 10 ou version antérieure et le pilote MPxIO natif
+
+
+
+ a| 
+SVC
+ a| 
+Contrôleur de volume SAN IBM
+
+
+
+ a| 
+VMware
+ a| 
+L'OS ESXi
+
+
+
+ a| 
+Windows ou Windows en cluster
+ a| 
+Le système d'exploitation Windows Server et Windows MPIO avec un pilote DSM
+
+
+
+ a| 
+Windows (ATTO)
+ a| 
+Le système d'exploitation Windows et le pilote ATTO Technology, Inc
+
+|===
+Une fois l'HCA installé et le stockage connecté à l'hôte, l'HCA envoie la topologie hôte aux contrôleurs de stockage via le chemin d'E/S. En fonction de la topologie hôte, les contrôleurs de stockage définissent automatiquement l'hôte et les ports hôtes associés, puis définissent le type d'hôte.
+
+[NOTE]
+====
+Si le HCA ne sélectionne pas le type d'hôte recommandé, vous devez définir manuellement le type d'hôte dans System Manager.
+
+====

@@ -1,0 +1,77 @@
+---
+permalink: sm-mirroring/requirements-for-using-asynchronous-mirroring.html 
+sidebar: sidebar 
+keywords: requirements, use, asynchronous, mirroring 
+summary: 'Si vous prévoyez d"utiliser la fonctionnalité de mise en miroir asynchrone, gardez les exigences suivantes à l"esprit.' 
+---
+= Requise pour l'utilisation de la mise en miroir asynchrone
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous prévoyez d'utiliser la fonctionnalité de mise en miroir asynchrone, gardez les exigences suivantes à l'esprit.
+
+
+
+== SANtricity Unified Manager
+
+Pour utiliser la mise en miroir asynchrone, vous devez configurer les conditions suivantes :
+
+* Le service Web Services Proxy est en cours d'exécution.
+* SANtricity Unified Manager s'exécute sur votre hôte local via une connexion HTTPS.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* SANtricity Unified Manager affiche des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+* SANtricity System Manager est lancé à partir d'Unified Manager.
+* Vous devez avoir découvert les deux baies de stockage entre elles que vous souhaitez mettre en miroir des données. Ensuite, dans Unified Manager, vous sélectionnez la baie de stockage du volume primaire, puis cliquez sur *Launch* pour ouvrir SANtricity System Manager basé sur navigateur.
+
+
+
+
+== Les baies de stockage
+
+* Vous devez disposer de deux baies de stockage.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Les baies de stockage des volumes primaires et secondaires peuvent exécuter différentes versions de systèmes d'exploitation. La version minimale prise en charge est 7.84.
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* Vos baies de stockage locales et distantes doivent être connectées via une structure Fibre Channel ou une interface iSCSI.
+
+
+
+
+== Configurations matérielles et exigences de connectivité prises en charge
+
+* La mise en miroir asynchrone n'est prise en charge que dans des configurations matérielles à double contrôleur.
+* La communication pour la mise en miroir asynchrone est uniquement prise en charge sur les contrôleurs avec des ports hôte Fibre Channel (FC) ou iSCSI. La fonction utilise l'un des ports hôte de chaque contrôleur sur la matrice de stockage locale et la matrice de stockage distante.
+* Si les baies de stockage sont connectées à la fois aux connexions FC et iSCSI, un groupe de miroirs asynchrone peut être mis en miroir sur FC et un autre groupe de miroirs asynchrone peut être mis en miroir sur iSCSI.
+
+
+
+
+== Candidats aux volumes en miroir
+
+* Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire en miroir asynchrone.
+* Le volume secondaire doit être au moins aussi grand que le volume primaire.
+* Un volume ne peut participer qu'à une seule relation miroir.
+
+
+
+
+== Capacité réservée
+
+* Un volume de capacité réservée est nécessaire pour un volume primaire et pour un volume secondaire d'une paire en miroir afin d'obtenir les informations d'écriture de journalisation pour une restauration après la réinitialisation du contrôleur et toute autre interruption temporaire.
+* Comme le volume primaire et le volume secondaire d'une paire en miroir nécessitent une capacité réservée supplémentaire, vous devez garantir que la capacité disponible sur les deux baies de stockage de la relation en miroir est suffisante.
+
+
+
+
+== Fonction de sécurité du lecteur
+
+* Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent disposer de paramètres de sécurité compatibles. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.
+* Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent utiliser le même type de lecteur. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
+

@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/what-is-cache-block-size.html 
+sidebar: sidebar 
+keywords: what, cache, block, size 
+summary: 'Le contrôleur de la matrice de stockage organise son cache en blocs, qui sont des blocs de mémoire pouvant contenir 4, 8, 16 ou 32 KiB. Tous les volumes du système de stockage partagent le même espace de cache. Par conséquent, les volumes ne peuvent avoir qu"une seule taille de bloc de cache.' 
+---
+= Quelle est la taille de bloc du cache ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôleur de la matrice de stockage organise son cache en « blocs », qui sont des blocs de mémoire pouvant contenir 4, 8, 16 ou 32 KiB. Tous les volumes du système de stockage partagent le même espace de cache. Par conséquent, les volumes ne peuvent avoir qu'une seule taille de bloc de cache.
+
+[NOTE]
+====
+Les blocs de cache ne sont pas les mêmes que les blocs de 512 octets utilisés par le système de blocs logiques des disques.
+
+====
+Les applications utilisent des tailles de blocs différentes, ce qui peut avoir un impact sur les performances du stockage. Par défaut, la taille de bloc dans System Manager est de 8 Kio, mais vous pouvez définir la valeur 4, 8, 16 ou 32 KiB. Une taille inférieure est un bon choix pour les systèmes de fichiers ou les applications de bases de données. Une taille plus importante est un bon choix pour les applications nécessitant des transferts de données importants, des E/S séquentielles ou une bande passante élevée, telles que le multimédia.

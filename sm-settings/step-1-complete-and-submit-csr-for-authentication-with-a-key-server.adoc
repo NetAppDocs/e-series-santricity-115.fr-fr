@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/step-1-complete-and-submit-csr-for-authentication-with-a-key-server.html 
+sidebar: sidebar 
+keywords: complete, ca certificate, signing, request, csr, key server 
+summary: 'Pour recevoir un certificat d"autorité de certification (CA) pour un serveur de gestion des clés, vous devez d"abord générer un fichier de requête de signature de certificat (CSR).' 
+---
+= Remplir la demande de signature de certificat de l'autorité de certification (CSR) pour un serveur de clés
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour recevoir un certificat d'autorité de certification (CA) pour un serveur de gestion des clés, vous devez d'abord générer un fichier de requête de signature de certificat (CSR).
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+
+Cette tâche décrit comment générer les fichiers .CSR (demandes de signature de certificat) que vous envoyez à une autorité de certification pour recevoir des certificats signés pour un serveur de gestion de clés. Au cours de cette tâche, vous devez fournir les informations relatives à votre entreprise.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Key Management*, sélectionnez *Complete CSR*.
+. Saisissez les informations suivantes :
++
+** *Nom commun* -- Un nom qui identifie cette RSC, comme le nom de la matrice de stockage, qui sera affiché dans les fichiers de certificat.
+** *Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp
+** *Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.
+** *Ville/localité* -- la ville ou la localité où se trouve votre organisation.
+** *État/région (facultatif)* -- l'état ou la région où se trouve votre organisation.
+** *Code ISO du pays* -- le code ISO à deux chiffres (Organisation internationale de normalisation), tel que les États-Unis, où se trouve votre organisation.
+
+
+. Cliquez sur *Télécharger*.
++
+Un fichier .CSR est enregistré sur votre système local.
+
+. Envoyez le(s) fichier(s) .CSR à votre autorité de certification.
+
+
+Lorsque vous obtenez les certificats client et serveur du serveur de gestion des clés, importez-les pour authentification avec les contrôleurs de la matrice de stockage.

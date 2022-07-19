@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html 
+sidebar: sidebar 
+keywords: import, trusted, certificates, controllers 
+summary: 'Après avoir reçu des certificats numériques d"une autorité de certification (CA), vous pouvez importer la chaîne de certificats (intermédiaire et racine) des contrôleurs.' 
+---
+= Importer des certificats approuvés pour les contrôleurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir reçu des certificats numériques d'une autorité de certification (CA), vous pouvez importer la chaîne de certificats (intermédiaire et racine) des contrôleurs.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Vous avez généré une demande de signature de certificat (.CSR file) et l'avez envoyée à l'autorité de certification.
+* L'autorité de certification a renvoyé des fichiers de certificat approuvés.
+* Les fichiers de certificat sont installés sur votre système local.
+
+
+Cette tâche explique comment télécharger les certificats de confiance pour les contrôleurs de la matrice de stockage.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet *Trusted*, sélectionnez *Import*.
++
+Une boîte de dialogue s'ouvre pour importer les fichiers de certificats approuvés.
+
+. Cliquez sur *Parcourir* pour sélectionner les fichiers de certificat des contrôleurs.
++
+Les noms de fichiers s'affichent dans la boîte de dialogue.
+
+. Cliquez sur *Importer*.
+
+
+Les fichiers sont chargés et validés.
+
+Importez le certificat de gestion.
