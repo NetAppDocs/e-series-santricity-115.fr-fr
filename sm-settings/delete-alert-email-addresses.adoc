@@ -28,4 +28,5 @@ La boîte de dialogue *confirmer la suppression de l'e-mail* s'ouvre.
 . Confirmez l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultat
 Les alertes ne sont plus envoyées à cette adresse e-mail.

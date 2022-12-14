@@ -6746,4 +6746,5 @@
   <block id="31424c4cc734412190de48127756849f" category="sidebar">Gérer les groupes de cohérence Snapshot</block>
   <block id="170fad9f4be46ada31f8a718075ed709" category="sidebar">Gérer les volumes Snapshot</block>
   <block id="fe82cef3fafe389abaff7e7b8c1c8945" category="sidebar">Pourquoi ne vois-je pas tous mes volumes, hôtes ou clusters hôtes ?</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
 </blocks>

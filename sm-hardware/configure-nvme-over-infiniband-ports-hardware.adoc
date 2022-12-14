@@ -19,6 +19,7 @@ Si votre contrôleur inclut une connexion NVMe over InfiniBand, vous pouvez conf
 * Vous devez connaître l'adresse IP de la connexion hôte.
 
 
+.Description de la tâche
 Vous pouvez accéder à la configuration NVMe over InfiniBand à partir de la page Hardware ou du menu:Settings[System]. Cette tâche décrit comment configurer les ports à partir de la page *Hardware*.
 
 [NOTE]

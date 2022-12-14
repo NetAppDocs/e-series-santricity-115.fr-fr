@@ -21,6 +21,7 @@ Après avoir importé la chaîne de certificats approuvée, vous importez un fic
 * Les fichiers de certificat de gestion sont disponibles sur votre système local.
 
 
+.Description de la tâche
 Cette tâche décrit comment télécharger les fichiers de certificat de gestion pour l'authentification du contrôleur.
 
 .Étapes
@@ -39,4 +40,5 @@ Le(s) fichier(s) est chargé(s) et validé(s).
 
 
 
+.Résultats
 La session est automatiquement interrompue. Vous devez vous reconnecter pour que le ou les certificats prennent effet. Lorsque vous vous connectez de nouveau, le nouveau certificat signé par l'autorité de certification est utilisé pour votre session.

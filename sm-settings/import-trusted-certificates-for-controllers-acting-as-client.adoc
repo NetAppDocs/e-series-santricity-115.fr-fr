@@ -21,6 +21,7 @@ Après avoir reçu des certificats numériques d'une autorité de certification 
 * Les fichiers de certificat sont installés sur votre système local.
 
 
+.Description de la tâche
 Cette tâche explique comment télécharger les certificats de confiance pour les contrôleurs de la matrice de stockage.
 
 .Étapes
@@ -36,6 +37,8 @@ Les noms de fichiers s'affichent dans la boîte de dialogue.
 . Cliquez sur *Importer*.
 
 
+.Résultats
 Les fichiers sont chargés et validés.
 
+.Une fois que vous avez terminé
 Importez le certificat de gestion.

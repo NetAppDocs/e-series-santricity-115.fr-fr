@@ -20,6 +20,7 @@ Vous pouvez modifier le niveau RAID d'un groupe de volumes pour répondre aux be
 * Vous ne pouvez pas modifier le niveau RAID d'un pool. System Manager configure automatiquement des pools en tant que RAID 6.
 
 
+.Description de la tâche
 Vous ne pouvez pas annuler cette opération après son démarrage. Vos données restent disponibles au cours de cette opération.
 
 En savoir plus sur les niveaux de RAID
@@ -83,4 +84,5 @@ Une boîte de dialogue de confirmation s'affiche si la capacité est réduite, s
 
 
 
+.Résultats
 Lorsque vous modifiez le niveau RAID d'un groupe de volumes, System Manager modifie les niveaux RAID de chaque volume qui comprend ce groupe. Les performances peuvent être légèrement affectées pendant l'opération.

@@ -18,6 +18,7 @@ Pour recevoir un certificat d'autorité de certification (CA) pour les contrôle
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 Cette tâche décrit comment générer les fichiers .CSR (demandes de signature de certificat) que vous envoyez à une autorité de certification pour recevoir des certificats de gestion signés pour les contrôleurs. Vous devez fournir des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du ou des contrôleurs. Au cours de cette tâche, un fichier .CSR est généré s'il n'y a qu'un seul contrôleur dans la matrice de stockage et deux fichiers .CSR s'il y a deux contrôleurs.
 
 .Étapes
@@ -64,4 +65,5 @@ Pour un seul contrôleur, un fichier .CSR est téléchargé sur votre système l
 . Envoyez le(s) fichier(s) .CSR à votre autorité de certification.
 
 
+.Une fois que vous avez terminé
 Lorsque vous recevez les certificats numériques, importez les fichiers de certificat que l'AC vous a envoyés.

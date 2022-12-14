@@ -19,6 +19,7 @@ Vous pouvez rétablir les certificats de gestion de la matrice de stockage à l'
 * Les certificats doivent être importés au préalable.
 
 
+.Description de la tâche
 La réinitialisation des certificats de gestion sur la matrice de stockage supprime les certificats de gestion actuels de chacun des contrôleurs. Une fois les certificats réinitialisés, les contrôleurs retournent à l'utilisation de certificats auto-signés.
 
 .Étapes
@@ -30,4 +31,5 @@ Une boîte de dialogue *confirmer la réinitialisation des certificats de gestio
 . Type `reset` Dans le champ, puis cliquez sur *Réinitialiser*.
 
 
+.Résultats
 Une fois votre navigateur actualisé, les contrôleurs reviennent à utiliser des certificats auto-signés. Par conséquent, le système invite les utilisateurs à accepter manuellement le certificat auto-signé pour leurs sessions.

@@ -32,6 +32,7 @@ Un certificat de serveur de gestion des clés valide le serveur, afin que la bai
 ====
 
 
+.Description de la tâche
 Cette tâche décrit comment télécharger des fichiers de certificat pour l'authentification entre les contrôleurs de la matrice de stockage et le serveur de gestion des clés.
 
 .Étapes

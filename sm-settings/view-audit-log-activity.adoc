@@ -36,6 +36,7 @@ En affichant les journaux d'audit, les utilisateurs disposant d'autorisations d'
 . Utilisez les sélections de la page Journal d'audit pour afficher et gérer les événements.
 +
 .Détails de la sélection
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

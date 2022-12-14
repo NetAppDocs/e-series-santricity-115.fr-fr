@@ -19,6 +19,7 @@ Si votre contrôleur inclut une connexion pour NVMe over RoCE (RDMA over Converg
 * Vous devez connaître l'adresse IP de la connexion hôte.
 
 
+.Description de la tâche
 Vous pouvez accéder à la configuration NVMe over RoCE à partir de la page *Hardware* ou du menu:Settings[System]. Cette tâche décrit comment configurer les ports à partir de la page matériel.
 
 [NOTE]
@@ -47,6 +48,7 @@ Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus d
 
 +
 .Détails du champ
+[%collapsible]
 ====
 |===
 | Paramètre de port | Description 
@@ -84,6 +86,7 @@ Si vous avez sélectionné Activer IPv4, une boîte de dialogue s'ouvre pour sé
 . Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement.
 +
 .Détails du champ
+[%collapsible]
 ====
 |===
 | Paramètre de port | Description 

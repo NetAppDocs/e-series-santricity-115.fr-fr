@@ -19,6 +19,7 @@ Si votre contrôleur inclut une connexion hôte iSCSI, vous pouvez configurer le
 * Vous devez connaître la vitesse du réseau (le taux de transfert de données entre les ports et l'hôte).
 
 
+.Description de la tâche
 Cette tâche décrit comment accéder à la configuration du port iSCSI à partir de la page matériel. Vous pouvez également accéder à la configuration à partir de la page système (menu:Paramètres[système]).
 
 [NOTE]
@@ -53,6 +54,7 @@ Pour afficher tous les paramètres de port, cliquez sur le lien Afficher plus de
 
 +
 .Détails du champ
+[%collapsible]
 ====
 |===
 | Paramètre de port | Description 
@@ -96,6 +98,7 @@ Si vous avez sélectionné Activer IPv4, une boîte de dialogue s'ouvre pour sé
 . Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement. Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus de paramètres* à droite de la boîte de dialogue.
 +
 .Détails du champ
+[%collapsible]
 ====
 |===
 | Paramètre de port | Description 

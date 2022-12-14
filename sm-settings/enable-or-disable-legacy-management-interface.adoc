@@ -14,6 +14,7 @@ summary: 'Vous pouvez activer ou désactiver l"interface de gestion héritée (s
 [role="lead"]
 Vous pouvez activer ou désactiver l'interface de gestion héritée (symbole), qui est une méthode de communication entre la matrice de stockage et le client de gestion. Par défaut, l'interface de gestion héritée est activée. Si vous la désactivez, la baie de stockage et le client de gestion utiliseront une méthode de communication plus sécurisée (API REST via https). Cependant, certains outils et tâches peuvent être affectés si ils sont désactivés.
 
+.Description de la tâche
 Le paramètre affecte les opérations comme suit :
 
 * *On* (par défaut) -- paramètre requis pour la mise en miroir, pour les commandes CLI qui fonctionnent uniquement sur les baies de stockage E5700 et E5600, et d'autres outils comme l'utilitaire QuickConnect et l'adaptateur OCI.

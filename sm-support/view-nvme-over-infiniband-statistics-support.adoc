@@ -14,6 +14,7 @@ summary: Vous pouvez afficher les données des connexions NVMe over InfiniBand a
 [role="lead"]
 Vous pouvez afficher les données des connexions NVMe over InfiniBand avec votre baie de stockage.
 
+.Description de la tâche
 System Manager affiche ces types de statistiques NVMe over InfiniBand. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
 
 * *Statistiques du contrôleur NVMe* -- fournit des statistiques sur le contrôleur NVMe, y compris les délais et les échecs de connexion.

@@ -18,6 +18,7 @@ Pour recevoir un certificat d'autorité de certification (CA) pour un serveur de
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 Cette tâche décrit comment générer les fichiers .CSR (demandes de signature de certificat) que vous envoyez à une autorité de certification pour recevoir des certificats signés pour un serveur de gestion de clés. Au cours de cette tâche, vous devez fournir les informations relatives à votre entreprise.
 
 .Étapes
@@ -40,4 +41,5 @@ Un fichier .CSR est enregistré sur votre système local.
 . Envoyez le(s) fichier(s) .CSR à votre autorité de certification.
 
 
+.Une fois que vous avez terminé
 Lorsque vous obtenez les certificats client et serveur du serveur de gestion des clés, importez-les pour authentification avec les contrôleurs de la matrice de stockage.

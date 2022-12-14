@@ -24,11 +24,12 @@ Une mise en miroir synchrone des volumes permet une réplication en temps réel 
 * Vous devez avoir créé à la fois les volumes primaires et secondaires que vous souhaitez utiliser dans la relation de miroir synchrone.
 
 
+.Description de la tâche
 Le processus de mise en miroir synchrone d'un volume est une procédure à plusieurs étapes :
 
-*  1: Select the primary volume
-*  2: Select the secondary volume
-*  3: Select synchronization settings
+* <<Étape 1 : sélectionnez le volume principal>>
+* <<Étape 2 : sélectionnez le volume secondaire>>
+* <<Étape 3 : sélectionnez les paramètres de synchronisation>>
 
 
 Un volume ne peut participer qu'à une seule relation miroir.
@@ -59,7 +60,7 @@ Vous devez sélectionner le volume primaire que vous souhaitez utiliser dans la 
 Si un volume a été sélectionné dans la mosaïque volumes et qu'il peut être mis en miroir, il est sélectionné par défaut.
 
 ====
-. Sélectionnez *Suivant* et allez à  2: Select the secondary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 2 : sélectionnez le volume secondaire>>.
 
 
 
@@ -75,6 +76,7 @@ Vous devez sélectionner le volume secondaire que vous souhaitez utiliser dans l
 * Le volume secondaire doit être au moins aussi grand que le volume primaire.
 
 
+.Description de la tâche
 Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste.
 
 Les volumes qui apparaissent dans cette boîte de dialogue sont triés par capacité, en commençant par le volume le plus proche de la capacité du volume primaire. Les volumes de capacité identique sont triés par ordre alphabétique.
@@ -99,7 +101,7 @@ Si votre matrice de stockage distante est protégée par un mot de passe, le sys
 Si un volume secondaire est choisi avec une capacité supérieure à celle du volume primaire, la capacité utilisable est limitée à la taille du volume primaire.
 
 ====
-. Cliquez sur *Suivant* et allez à  3: Select synchronization settings.
+. Cliquez sur *Suivant* et allez à <<Étape 3 : sélectionnez les paramètres de synchronisation>>.
 
 
 
@@ -119,6 +121,7 @@ La priorité définie dans cette boîte de dialogue s'applique à la fois au vol
 
 +
 .En savoir plus sur les taux de synchronisation
+[%collapsible]
 ====
 Il existe cinq taux de priorité de synchronisation :
 
@@ -139,6 +142,7 @@ Il existe cinq taux de priorité de synchronisation :
 . Cliquez sur *Finish* pour terminer la séquence de mise en miroir synchrone.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Active la fonction de mise en miroir synchrone.
@@ -146,4 +150,5 @@ System Manager effectue les actions suivantes :
 * Définit la priorité de synchronisation et la règle de resynchronisation.
 
 
+.Une fois que vous avez terminé
 Sélectionner menu:Accueil[opérations de visualisation en cours] pour afficher la progression de l'opération de mise en miroir synchrone. Cette opération peut être longue et peut affecter les performances du système.

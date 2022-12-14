@@ -14,6 +14,7 @@ summary: 'Vous utilisez un groupe de volumes pour créer un ou plusieurs volumes
 [role="lead"]
 Vous utilisez un groupe de volumes pour créer un ou plusieurs volumes accessibles à l'hôte. Un groupe de volumes est un conteneur pour les volumes dont les caractéristiques sont partagées telles que le niveau RAID et la capacité.
 
+.Description de la tâche
 De plus, des disques de capacité supérieure et la possibilité de répartir les volumes entre les contrôleurs permettent de créer plusieurs volumes par groupe de volumes et d'utiliser la capacité de stockage et de protéger vos données.
 
 Suivez ces instructions lorsque vous créez un groupe de volumes.
@@ -64,6 +65,7 @@ Les caractéristiques de conduite affichées dépendent de la méthode automatiq
 
 +
 .Caractéristiques de l'entraînement automatique de la méthode
+[%collapsible]
 ====
 [cols="2*"]
 |===
@@ -133,6 +135,7 @@ Indique si la protection contre les pertes de tiroirs est disponible, qui est un
 ====
 +
 .Caractéristiques d'entraînement de méthode manuelle
+[%collapsible]
 ====
 [cols="2*"]
 |===

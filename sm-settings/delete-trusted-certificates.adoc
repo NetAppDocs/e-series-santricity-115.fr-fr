@@ -24,6 +24,7 @@ Vous pouvez supprimer tous les certificats importés par l'utilisateur.
 Vous risquez de perdre l'accès au système si vous supprimez un certificat utilisé pour authentifier les certificats de gestion de la matrice de stockage ou le serveur LDAP avant d'importer un certificat de remplacement.
 
 ====
+.Description de la tâche
 Cette tâche décrit comment supprimer des certificats importés par l'utilisateur. Les certificats prédéfinis ne peuvent pas être supprimés.
 
 .Étapes
