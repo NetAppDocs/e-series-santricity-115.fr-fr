@@ -160,14 +160,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/assign-hot-spares-hardware.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/assign-hot-spares-hardware.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/assign-hot-spares-hardware.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/assign-hot-spares-hardware.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -916,14 +916,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/critical-events.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-interface/critical-events.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-interface/critical-events.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/critical-events.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -1245,14 +1245,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/end-iscsi-session-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/end-iscsi-session-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/end-iscsi-session-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/end-iscsi-session-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -1623,20 +1623,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-mirroring/</loc>
-      
-      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/</loc>
-      
-      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
@@ -1651,7 +1637,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-mirroring/</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -1659,6 +1645,20 @@
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/</loc>
+      
+      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/</loc>
+      
+      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -1931,14 +1931,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/replace-drive-logically-hardware.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/replace-drive-logically-hardware.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/replace-drive-logically-hardware.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/replace-drive-logically-hardware.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -2052,7 +2052,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115//search.html</loc>
       
-      <lastmod>2022-11-15T19:53:19+00:00</lastmod>
+      <lastmod>2022-12-15T12:18:57+00:00</lastmod>
       
     </url>
   
@@ -2484,13 +2484,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iscsi-sessions-support.html</loc>
-      
-      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/view-iscsi-sessions-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
@@ -2498,7 +2491,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iscsi-statistics-packages-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iscsi-sessions-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -2512,7 +2505,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iser-over-infiniband-statistics-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iscsi-statistics-packages-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -2526,6 +2519,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-iser-over-infiniband-statistics-support.html</loc>
+      
+      <lastmod>2022-11-15T19:52:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/view-local-user-roles.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
@@ -2533,14 +2533,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-nvme-over-fabrics-statistics-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/view-nvme-over-fabrics-statistics-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-settings/view-nvme-over-fabrics-statistics-support.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/view-nvme-over-fabrics-statistics-support.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -3114,14 +3114,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/what-is-shelf-loss-protection-and-drawer-loss-protection.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-storage/what-is-shelf-loss-protection-and-drawer-loss-protection.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
@@ -3177,14 +3177,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/what-type-of-data-is-collected-through-autosupport.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-interface/what-type-of-data-is-collected-through-autosupport.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-interface/what-type-of-data-is-collected-through-autosupport.html</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-115/sm-support/what-type-of-data-is-collected-through-autosupport.html</loc>
       
       <lastmod>2022-11-15T19:52:59+00:00</lastmod>
       
